@@ -1,0 +1,339 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+body{
+	width: 95%;
+	background: #292929;
+	font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+	text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+.about-text{
+	margin-top: 8vh;
+	margin-left: 7vw;
+}
+.hr-light{
+  width: 20%;
+  align: center;
+}
+ h5{
+ 	color: #F5F5F5;
+ }
+.teams{
+   margin-top: 10vh;
+}
+
+.container-fluid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  left: 0;
+  margin: 0 auto;
+  top: 110%;
+}
+.container-fluid p {
+  font-size: 20px;
+}
+.container-fluid a {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #1abc9c;
+  text-decoration: none;
+  font-size: 20px;
+  overflow: hidden;
+}
+.container-fluid a:after {
+  content: '';
+  position: absolute;
+  background: #1abc9c;
+  height: 2px;
+  width: 0%;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  transition: .35s ease;
+}
+.container-fluid a:hover:after, .container-fluid a:focus:after, .container-fluid a:active:after {
+  width: 100%;
+}
+
+h1 {
+  position: relative;
+  text-align: center;
+}
+
+.button_container {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 1000000000000;
+  transition: opacity .25s ease;
+}
+.button_container:hover {
+  opacity: .7;
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #F5F5F5;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #F5F5F5;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #F5F5F5;
+}
+.button_container span {
+  background: #F5F5F5;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+  cursor: pointer;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background: #141414;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s, height .35s;
+  overflow: hidden;
+  z-index:100000;
+}
+.overlay.open {
+  opacity: .9;
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  animation: fadeInRight .5s ease forwards;
+  animation-delay: .35s;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: .4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: .45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: .50s;
+}
+.overlay.open li:nth-of-type(5) {
+  animation-delay: .55s;
+}
+.overlay.open li:nth-of-type(6) {
+  animation-delay: .6s;
+}
+.overlay.open li:nth-of-type(7) {
+  animation-delay: .65s;
+}
+.overlay nav {
+  position: relative;
+  height: 69%;
+  top: 45%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  font-weight: 400;
+  text-align: center;
+}
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay ul li {
+  display: block;
+  height: 10%;
+  height: calc(100% / 6);
+  min-height: 20px;
+  position: relative;
+  opacity: 0;
+}
+.overlay ul li a {
+  display: block;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay ul li a:hover:after, .overlay ul li a:focus:after, .overlay ul li a:active:after {
+  width: 100%;
+}
+.overlay ul li a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background: #FFF;
+  transition: .35s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+.heading-title {
+    margin-bottom: 100px;
+}
+.text-center {
+    text-align: center;
+}
+.heading-title h3 {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+.p-top-30 {
+    padding-top: 30px;
+}
+.half-txt {
+    width: 60%;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 25px;
+    color: #7e7e7e;
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.team-member, .team-member .team-img {
+    position: relative;
+}
+.team-member {
+    overflow: hidden;
+}
+.team-member, .team-member .team-img {
+    position: relative;
+}
+
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 1);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.team-member:hover .team-hover .desk {
+    top: 35%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.team-hover .desk {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    padding: 0 20px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+.team-member:hover .team-hover .s-link {
+    bottom: 10%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.team-hover .s-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    font-size: 35px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+.team-member .s-link a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 16px;
+}
+.team-title {
+    position: static;
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+}
+.team-title h5 {
+    margin-bottom: 0px;
+    display: block;
+    text-transform: uppercase;
+}
+.team-title span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    letter-spacing: 1px;
+}
+
+ @media screen and (min-width: 0px) and (max-width: 767px) {/* show it on small screens */
+  .desktop-only { display: none; }   
+	}  
+
+  @media screen and (min-width: 768px){/* show it on big screens */   
+ .mobile-only { display: none; }  
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+	.abt{
+		margin-top: 5vh;
+		font-size: 8vw;
+	}
+	.hr-light{
+  width: 40%;
+}
+.about-text{
+	margin-top: 5vh;
+}
+.abt-txt{
+	font-size: 5vw;
+}
+.our-team{
+	font-size: 8vw;
+	margin-top: 55vh;
+}
+}

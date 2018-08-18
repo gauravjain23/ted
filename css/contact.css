@@ -1,0 +1,74 @@
+body{
+	width: 95%;
+}
+
+.btn{
+	right: 35%;
+	left: 40%;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-bottom: 2px solid #292929;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+.message{
+  margin-left: 8vw;
+  margin-top: 3vh;
+}
+
+.msg{
+margin-left: 6vw;
+}
+
+#text1{
+  margin-left: 3vw;
+  margin-top: 3vh;
+ width:120vw;
+ height:45vh;
+}
+#n1{
+  margin-left: 0.5vw;
+  margin-top: 1vw;
+  float:left;
+  text-align: left;
+  
+}
+#n2{
+  margin-right:0.5vw;
+  margin-top: 1vw;
+   float: right;
+  text-align: right;
+}
+#n3{
+  margin-right: 0.5vw;
+  margin-top: 5vw;
+  text-align: right;
+  float: right;
+}
+#n4{
+  margin-left: 0.5vw;
+  margin-top: 5vw;
+  text-align: left;
+  float: left;
+}
+
+#bold{
+	font-weight: bold;
+}
+
+.map{
+  width: 105.2%;
+  height: 50vh;
+  margin-top: 5vh;
+}
+.footer{
+  color: #292929;
+  margin-top: 3vh;
+  text-align: center;
+  justify-content: center;
+}
